@@ -49,12 +49,12 @@ public class Reko3Runner extends Runner<Reko3Transition> {
 
 			@Override
 			public void onGameOver(MonteCarloTreeSearch<Reko3Transition, ? extends Node<Reko3Transition>> mcts) {
-				System.out.println("Game over.");
+				System.out.println("[Reko3Runner][Listener][onGameOver]Game over.");
 			}
 
 			@Override
 			public void onNoPossibleMove(MonteCarloTreeSearch<Reko3Transition, ? extends Node<Reko3Transition>> mcts) {
-				System.out.println("No possible move(s)");
+				System.out.println("[Reko3Runner][Listener][onGameOver]No possible move(s)");
 			}
 		};
 		runner.setListener(l);
